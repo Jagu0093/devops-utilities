@@ -4,6 +4,13 @@
 # Description : Analyze nginx-style access logs
 # Usage       : ./log_analyzer.sh <logfile> [top_n]
 # Example     : ./log_analyzer.sh access.log 10
+# Author      : Your Name
+# ─────────────────────────────────────────────
+# ─────────────────────────────────────────────
+# log_analyzer.sh
+# Description : Analyze nginx-style access logs
+# Usage       : ./log_analyzer.sh <logfile> [top_n]
+# Example     : ./log_analyzer.sh access.log 10
 # Author      : DevOps Practice
 # License     : MIT
 # ─────────────────────────────────────────────
