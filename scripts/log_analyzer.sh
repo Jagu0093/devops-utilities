@@ -5,6 +5,7 @@
 # Usage       : ./log_analyzer.sh <logfile> [top_n]
 # Example     : ./log_analyzer.sh access.log 10
 # Author      : Your Name
+# License     : MIT
 # ─────────────────────────────────────────────
 # ─────────────────────────────────────────────
 # log_analyzer.sh
