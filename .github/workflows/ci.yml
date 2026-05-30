@@ -1,0 +1,30 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Validate shell scripts
+        run: |
+          sudo apt-get install -y shellcheck
+          shellcheck scripts/*.sh
+
+      - name: Run log analyzer test
+        run: |
+          chmod +x scripts/log_analyzer.sh
+          ./scripts/log_analyzer.sh docs/sample_access.log
+
+      - name: Check file permissions
+        run: |
+          ls -la scripts/
+          echo "All scripts validated successfully"
